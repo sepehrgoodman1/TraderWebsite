@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- chart  -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Profit(Usd)"],
+          ["2004", 1000],
+          ["2005", 1170],
+          ["2006", 660],
+          ["2007", 1030],
+        ]);
+
+        var options = {
+          title: "Company Performance",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart")
+        );
+
+        chart.draw(data, options);
+      }
+      google.charts.setOnLoadCallback(drawChart1);
+
+      function drawChart1() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Profit(Usd)"],
+          ["2004", 1000],
+          ["2005", 1170],
+          ["2006", 660],
+          ["2007", 1030],
+        ]);
+
+        var options = {
+          title: "Company Performance",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart1")
+        );
+
+        chart.draw(data, options);
+      }
+      google.charts.setOnLoadCallback(drawChart2);
+
+      function drawChart2() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Profit(Usd)"],
+          ["2004", 1000],
+          ["2005", 1170],
+          ["2006", 660],
+          ["2007", 1030],
+        ]);
+
+        var options = {
+          title: "Company Performance",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart2")
+        );
+
+        chart.draw(data, options);
+      }
+      google.charts.setOnLoadCallback(drawChart3);
+
+      function drawChart3() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Profit(Usd)"],
+          ["2004", 1000],
+          ["2005", 1170],
+          ["2006", 660],
+          ["2007", 1030],
+        ]);
+
+        var options = {
+          title: "Company Performance",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart3")
+        );
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="Wrapper">
+      <h1 class="h3">Top Traders</h1>
+      <div class="P_box">
+        <!-- item  -->
+        <div class="Box mt-5">
+          <div class="ImgAndTitle">
+            <div>
+              <img src="assets/images/Man.png" alt="" class="ImgTrade" />
+            </div>
+            <div class="ms-3">
+              <h5>TOL LANGIT V10</h5>
+            </div>
+          </div>
+          <!-- chart  -->
+          <div
+            id="curve_chart"
+            class="mt-3"
+            style="width: 260px; height: 200px"
+          ></div>
+          <div class="P_Detail">
+            <div class="Flex1">
+              <div class="Fs12">ROI</div>
+              <div class="Fw500 GreenArea">+537.06%</div>
+            </div>
+            <div class="Flex1">
+              <div class="Fs12">Drawdown</div>
+              <div class="Fw500 GrayArea">-4%</div>
+            </div>
+          </div>
+          <div class="P_Detail">
+            <div class="Flex1">
+              <div class="Fs12">User Folowing</div>
+              <div class="Fw500 GreenArea">961</div>
+            </div>
+            <div class="Flex1">
+              <div class="Fs12">AUM</div>
+              <div class="Fw500 GrayArea">$195.2K</div>
+            </div>
+          </div>
+          <button class="Follow">Follow</button>
+        </div>
+        <!-- item  -->
+        <div class="Box mt-5">
+          <div class="ImgAndTitle">
+            <div>
+              <img src="assets/images/Man.png" alt="" class="ImgTrade" />
+            </div>
+            <div class="ms-3">
+              <h5>TOL LANGIT V10</h5>
+            </div>
+          </div>
+          <!-- chart  -->
+          <div
+            id="curve_chart1"
+            class="mt-3"
+            style="width: 260px; height: 200px"
+          ></div>
+          <div class="P_Detail">
+            <div class="Flex1">
+              <div class="Fs12">ROI</div>
+              <div class="Fw500 GreenArea">+537.06%</div>
+            </div>
+            <div class="Flex1">
+              <div class="Fs12">Drawdown</div>
+              <div class="Fw500 GrayArea">-4%</div>
+            </div>
+          </div>
+          <div class="P_Detail">
+            <div class="Flex1">
+              <div class="Fs12">User Folowing</div>
+              <div class="Fw500 GreenArea">961</div>
+            </div>
+            <div class="Flex1">
+              <div class="Fs12">AUM</div>
+              <div class="Fw500 GrayArea">$195.2K</div>
+            </div>
+          </div>
+          <button class="Follow">Follow</button>
+        </div>
+        <!-- item  -->
+        <div class="Box mt-5">
+          <div class="ImgAndTitle">
+            <div>
+              <img src="assets/images/Man.png" alt="" class="ImgTrade" />
+            </div>
+            <div class="ms-3">
+              <h5>TOL LANGIT V10</h5>
+            </div>
+          </div>
+          <!-- chart  -->
+          <div
+            id="curve_chart2"
+            class="mt-3"
+            style="width: 260px; height: 200px"
+          ></div>
+          <div class="P_Detail">
+            <div class="Flex1">
+              <div class="Fs12">ROI</div>
+              <div class="Fw500 GreenArea">+537.06%</div>
+            </div>
+            <div class="Flex1">
+              <div class="Fs12">Drawdown</div>
+              <div class="Fw500 GrayArea">-4%</div>
+            </div>
+          </div>
+          <div class="P_Detail">
+            <div class="Flex1">
+              <div class="Fs12">User Folowing</div>
+              <div class="Fw500 GreenArea">961</div>
+            </div>
+            <div class="Flex1">
+              <div class="Fs12">AUM</div>
+              <div class="Fw500 GrayArea">$195.2K</div>
+            </div>
+          </div>
+          <button class="Follow">Follow</button>
+        </div>
+       
+      </div>
+    </div>
+  </body>
+</html>
